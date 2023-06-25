@@ -1,11 +1,11 @@
 {
-  "name": "webpack",
+  "name": "parcel",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
@@ -14,22 +14,17 @@
     "@babel/core": "^7.22.5",
     "@babel/plugin-transform-runtime": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
-    "autoprefixer": "^10.4.14",
-    "babel-loader": "^9.1.2",
-    "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.8.1",
-    "html-webpack-plugin": "^5.5.3",
+    "autoprefixer": "^9.8.8",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0",
     "postcss": "^8.4.24",
-    "postcss-loader": "^7.3.3",
-    "sass": "^1.63.6",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.88.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.15.1"
+    "sass": "^1.63.6"
+  },
+  "staticFiles": {
+    "staticPath": "static"
   },
   "browserslist": [
-    "> 1%",
+    " > 1%",
     "last 2 versions"
   ]
 }
